@@ -1,11 +1,16 @@
 body {
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: 'PT Serif', Arial, Helvetica, sans-serif;
     margin:0;
+}
+
+html, body {
+  width:100%;
+  overflow-x:hidden;
 }
 
 .header1 {
     display:flex;
-    background-color: #1f2937;
+    background-color: #798478;
     align-items:center;
     justify-content:space-around;
 	flex-wrap: wrap;
@@ -16,21 +21,22 @@ body {
 
 .intro {
     display:flex;
-    background-color:#1f2937;
+    background-color:#798478;
     align-items:center;
     justify-content:space-around;
     padding:75px;
-    gap:600px;
+    gap:300px;
 }
 
 h1, h2 {
-    color:white; 
+    color:rgb(247, 236, 220); 
     margin:0;
     padding:0;
 }
 
 h1 {
     font-size:24px;
+    font-style:italic;
 }
 
 h2 {
@@ -39,7 +45,17 @@ h2 {
 
 .text {
     font-size:16px;
-    color:rgb(201, 201, 201);
+    color:#f2f3d9;
+}
+
+.textwhite {
+    font-size:16px;
+    color:white;
+}
+
+.cardtext {
+    font-size:16px;
+    color:black;
 }
 
 h3 {
@@ -51,13 +67,9 @@ h3 {
     gap:40px;
 }
 
-.button {
-    
-}
-
 .content {
     display:flex;
-    background-color:white;
+    background-color:#f2f3d9;
     align-items:center;
     justify-content:center;
     flex-direction:column;
@@ -78,31 +90,78 @@ h3 {
 
 .quote {
     display:flex;
-    background-color:rgb(201, 201, 201);
+    background-color: rgb(246, 246, 246);
     justify-content:center;
     align-items:center;
-    height:144px;
-    font-size:64px;
+    font-size:25px;
     font-style:italic;
+    padding:144px;
+}
+
+.signup {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:124px;
+    background-color:#f2f3d9;
+}
+
+.box {
+    width:500px;
+	height:100px;
+	margin:10px;
+	padding:10px;
+    border-radius:25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color:#798478;
+}
+
+button {
+    background-color: #1A1423;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    padding: 12px 24px;
+    text-align: center;
+    font-size: 13px;
+    margin: 4px 2px;
+    opacity: 0.6;
+    transition: 0.3s;
+    text-decoration: none;
+    cursor: pointer;
+    
+}
+
+button:hover {
+    opacity: 1;
 }
 
 .footer {
     height: 72px;
-    background: #1f2937;
+    background: #798478;
     color: white;
     display:flex;
     justify-content:center;
     align-items:center;
+    flex-direction:column;
   }
 
 a {
     text-decoration:none;
-    color:#E5E7EB;
+    color:rgb(247, 236, 220);
     font-size: 18px;
+    opacity: 0.6;
+    transition: 0.3s;
+    cursor: pointer;
   }
+
+a:hover {
+    opacity: 1;
+}
   
 img {
     max-width:150px;
     padding:32px;
 }
-
